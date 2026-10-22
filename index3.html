@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>رسالة أنواع الاختلاف الناشئة عن التأويل | الشيخ هشام البيلي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F8F7; --surface:#FFFFFF; --moss:#E4ECE8; --ink:#12201E; --ink2:#46574F;
+  --green:#0E4A43; --green-hi:#16665C; --on-green:#F3F8F6; --brass:#8A5E0E; --brass-bg:#C9962F; --line:#D0DBD6;
+  --pattern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23F3F8F6' stroke-width='1' opacity='.13'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3Ccircle cx='36' cy='36' r='6'/%3E%3C/g%3E%3C/svg%3E");
+  --serif:'Amiri','Noto Naskh Arabic',serif; --sans:'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0B1513; --surface:#12211E; --moss:#183029; --ink:#E7EFEC; --ink2:#A3B6AF;
+    --green:#4FA896; --green-hi:#6CC3B1; --on-green:#07110F; --brass:#E0AD4C; --brass-bg:#D9A441; --line:#244039;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0B1513; --surface:#12211E; --moss:#183029; --ink:#E7EFEC; --ink2:#A3B6AF;
+  --green:#4FA896; --green-hi:#6CC3B1; --on-green:#07110F; --brass:#E0AD4C; --brass-bg:#D9A441; --line:#244039;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+ul{list-style:none;padding:0}
+:focus-visible{outline:3px solid var(--brass-bg);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+svg.i{width:22px;height:22px;flex:none}
+
+.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:36px;height:36px;color:var(--green)}
+.brand b{display:block;font-family:var(--serif);font-size:1.25rem;line-height:1.2}
+.brand small{display:block;font-size:.76rem;color:var(--ink2);line-height:1.3}
+.tools{display:flex;gap:8px;margin-inline-start:auto}
+.ibtn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:42px;min-width:42px;padding:0 14px;border:1px solid var(--line);background:var(--surface);border-radius:10px}
+.ibtn:hover{border-color:var(--green)}
+.crumbs{padding:18px 0 0;font-size:.92rem;color:var(--ink2)}
+.crumbs a:hover{color:var(--green);text-decoration:underline}
+.crumbs span{margin-inline:8px}
+
+.layout{display:grid;gap:28px;padding:20px 0 64px}
+@media (min-width:1000px){.layout{grid-template-columns:minmax(0,1fr) 340px;gap:36px;align-items:start}}
+
+/* player card */
+.player{position:relative;overflow:hidden;background:var(--green);color:var(--on-green);border-radius:20px;padding:clamp(22px,4vw,44px)}
+.player::before{content:"";position:absolute;inset:0;background:var(--pattern);-webkit-mask-image:linear-gradient(to left,#000 0,transparent 75%);mask-image:linear-gradient(to left,#000 0,transparent 75%);pointer-events:none}
+.player>*{position:relative}
+.kicker{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.92rem;opacity:.9}
+.kicker a{border-bottom:1px solid currentColor}
+.badge{display:inline-block;padding:0 12px;border:1px solid currentColor;border-radius:999px;font-weight:500}
+.player h1{font-family:var(--serif);font-size:clamp(1.9rem,4.4vw,3.1rem);line-height:1.35;font-weight:700;margin:14px 0 6px;max-width:22em}
+.player .by{opacity:.9;font-size:1.02rem}
+
+.bar{margin-top:30px}
+.seek{position:relative;height:28px;display:flex;align-items:center}
+.seek input{-webkit-appearance:none;appearance:none;width:100%;height:28px;background:transparent;cursor:pointer;margin:0}
+.seek input::-webkit-slider-runnable-track{height:6px;border-radius:99px;background:linear-gradient(to left,var(--brass-bg) var(--p,0%),rgba(255,255,255,.28) var(--p,0%))}
+.seek input::-moz-range-track{height:6px;border-radius:99px;background:rgba(255,255,255,.28)}
+.seek input::-moz-range-progress{height:6px;border-radius:99px;background:var(--brass-bg)}
+.seek input::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;margin-top:-7px;border-radius:50%;background:#fff;border:3px solid var(--brass-bg)}
+.seek input::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--brass-bg)}
+.marks{position:absolute;inset:0;pointer-events:none}
+.marks i{position:absolute;top:2px;width:3px;height:10px;background:#fff;border-radius:2px;transform:translateX(50%)}
+.times{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums;font-size:.92rem;opacity:.92}
+
+.ctrl{display:flex;align-items:center;justify-content:center;gap:clamp(10px,3vw,26px);margin-top:14px;flex-wrap:wrap}
+.cbtn{display:grid;place-items:center;width:50px;height:50px;border-radius:50%;border:1.5px solid rgba(255,255,255,.55);background:transparent;position:relative}
+.cbtn:hover{background:rgba(255,255,255,.14)}
+.cbtn small{position:absolute;font-size:.7rem;font-weight:600;line-height:1;margin-top:3px}
+.cbtn.main{width:78px;height:78px;background:var(--on-green);color:var(--green);border-color:var(--on-green)}
+.cbtn.main:hover{background:var(--on-green);filter:brightness(.94)}
+.cbtn.main svg{width:32px;height:32px}
+.pill{height:44px;min-width:64px;padding:0 16px;border:1.5px solid rgba(255,255,255,.55);background:transparent;border-radius:999px;font-weight:600;font-variant-numeric:tabular-nums}
+.pill:hover{background:rgba(255,255,255,.14)}
+.state{min-height:1.6em;margin-top:10px;text-align:center;font-size:.9rem;opacity:.9}
+.vol{display:flex;align-items:center;gap:8px}
+.vol input{width:90px;accent-color:var(--brass-bg)}
+@media (max-width:560px){.vol{display:none}}
+
+/* action row */
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.act{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 18px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);font-weight:500}
+.act:hover{border-color:var(--green);color:var(--green)}
+.act.prime{background:var(--green);color:var(--on-green);border-color:var(--green)}
+.act.prime:hover{filter:brightness(1.1);color:var(--on-green)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:20px;color:var(--ink2);font-size:.93rem}
+
+/* cards */
+.card{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.card-h{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.card-h h2{font-family:var(--serif);font-size:1.45rem;line-height:1.3}
+.card-h button{font-size:.9rem;color:var(--green);font-weight:500;border:0;background:none;border-bottom:1.5px solid currentColor;padding:0}
+.bm{display:flex;align-items:center;gap:12px;padding:11px 20px;border-bottom:1px solid var(--line)}
+.bm:last-child{border-bottom:0}
+.bm button.go{display:flex;align-items:center;gap:12px;flex:1;border:0;background:none;text-align:start;padding:0}
+.bm time{font-variant-numeric:tabular-nums;font-family:var(--serif);font-size:1.3rem;color:var(--brass);min-width:3.7ch}
+.bm .del{border:0;background:none;color:var(--ink2);font-size:.88rem}
+.bm .del:hover{color:var(--ink);text-decoration:underline}
+.empty{padding:18px 20px;color:var(--ink2);font-size:.96rem}
+
+.about{padding:20px;color:var(--ink2)}
+.about p+p{margin-top:8px}
+.kb{display:flex;flex-wrap:wrap;gap:8px 20px;padding:0 20px 20px;color:var(--ink2);font-size:.9rem}
+kbd{font:inherit;font-size:.82rem;padding:0 8px;border:1px solid var(--line);border-bottom-width:2px;border-radius:6px;background:var(--paper);color:var(--ink)}
+
+/* side */
+.side .card{margin-top:0}
+.side .card+.card{margin-top:20px}
+.cl a{display:block;padding:12px 20px;border-bottom:1px solid var(--line)}
+.cl a:last-child{border-bottom:0}
+.cl a:hover{background:var(--moss)}
+.cl a.now{background:var(--moss);box-shadow:inset -4px 0 0 var(--brass-bg)}
+.cl b{font-weight:500;display:block;line-height:1.5}
+.cl small{color:var(--ink2);font-size:.86rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:16px 20px}
+.chips a{padding:3px 14px;border:1px solid var(--line);border-radius:999px;font-size:.92rem;background:var(--paper)}
+.chips a:hover{border-color:var(--green);color:var(--green)}
+
+footer{background:var(--ink);color:var(--paper);padding:28px 0;font-size:.92rem}
+:root[data-theme="dark"] footer{background:#050B0A;color:#E7EFEC}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) footer{background:#050B0A;color:#E7EFEC}}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer a{text-decoration:underline;text-underline-offset:3px;opacity:.9}
+
+.toast{position:fixed;inset-inline:0;bottom:22px;margin-inline:auto;width:fit-content;max-width:90vw;padding:10px 20px;border-radius:10px;background:var(--ink);color:var(--paper);font-size:.95rem;opacity:0;transform:translateY(10px);transition:.2s;pointer-events:none;z-index:50}
+.toast.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="22" height="22"/><rect x="9" y="9" width="22" height="22" transform="rotate(45 20 20)"/><circle cx="20" cy="20" r="3.5" fill="currentColor"/></g></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4v16l13-8z" fill="currentColor" transform="translate(24 0) scale(-1 1)"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a8 8 0 1 1-7.5 5.2"/><path d="M12 1.5 8.5 5 12 8.5"/></g></symbol>
+  <symbol id="i-fwd" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a8 8 0 1 0 7.5 5.2"/><path d="m12 1.5 3.5 3.5L12 8.5"/></g></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 20h14"/></g></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.7 10.6 6.6-4.2M8.7 13.4l6.6 4.2"/></g></symbol>
+  <symbol id="i-mark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4m0 0h12l-2 4 2 4H5"/></g></symbol>
+  <symbol id="i-vol" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9zM17 9a4 4 0 0 1 0 6"/></g></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.elbeialy.com/index.php" aria-label="الصفحة الرئيسية للموقع">
+      <svg><use href="#star"/></svg>
+      <span><b>الشيخ هشام البيلي</b><small>الموقع الرسمي</small></span>
+    </a>
+    <div class="tools">
+      <a class="ibtn" href="https://www.elbeialy.com/catplay.php?catsmktba=5015">كل دروس الدورة</a>
+      <button class="ibtn" id="theme" aria-label="تبديل الوضع الداكن"><svg class="i"><use href="#i-moon"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="مسار الصفحة">
+    <a href="https://www.elbeialy.com/index.php">الرئيسية</a><span aria-hidden="true">/</span>
+    <a href="https://www.elbeialy.com/catplay.php?catsmktba=51">الدورات العلمية</a><span aria-hidden="true">/</span>
+    <a href="https://www.elbeialy.com/catplay.php?catsmktba=5015">الدورة 832</a>
+  </nav>
+
+  <div class="layout">
+    <main>
+      <section class="player" aria-label="مشغّل الدرس">
+        <div class="kicker">
+          <span class="badge">الدرس 02</span>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=5015">الدورة العلمية رقم 832: شرح عدة رسائل للسلف وعلماء الأمة</a>
+        </div>
+        <h1>رسالة أنواع الاختلاف الناشئة عن التأويل</h1>
+        <p class="by">للعلامة ابن القيم، شرح الشيخ هشام البيلي</p>
+
+        <audio id="au" preload="metadata" src="https://www.elbeialy.com/media/9Daorat/832-2.mp3"></audio>
+
+        <div class="bar">
+          <div class="seek">
+            <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="موضع التشغيل">
+            <div class="marks" id="marks" aria-hidden="true"></div>
+          </div>
+          <div class="times"><span id="cur">0:00</span><span id="dur">--:--</span></div>
+        </div>
+
+        <div class="ctrl">
+          <button class="pill" id="speed" aria-label="سرعة التشغيل">1×</button>
+          <button class="cbtn" id="back" aria-label="رجوع 15 ثانية"><svg class="i"><use href="#i-back"/></svg><small>15</small></button>
+          <button class="cbtn main" id="play" aria-label="تشغيل"><svg class="i" id="pi"><use href="#i-play"/></svg></button>
+          <button class="cbtn" id="fwd" aria-label="تقديم 15 ثانية"><svg class="i"><use href="#i-fwd"/></svg><small>15</small></button>
+          <div class="vol"><svg class="i"><use href="#i-vol"/></svg><input type="range" id="vol" min="0" max="1" step="0.05" value="1" aria-label="مستوى الصوت"></div>
+        </div>
+        <p class="state" id="state" role="status" aria-live="polite"></p>
+      </section>
+
+      <div class="acts">
+        <a class="act prime" href="https://www.elbeialy.com/media/9Daorat/832-2.mp3" download><svg class="i"><use href="#i-dl"/></svg>تحميل الدرس mp3</a>
+        <button class="act" id="mark"><svg class="i"><use href="#i-mark"/></svg>حفظ علامة هنا</button>
+        <button class="act" id="share"><svg class="i"><use href="#i-share"/></svg>مشاركة</button>
+        <a class="act" href="https://docs.google.com/forms/d/e/1FAIpQLSd7_G_RzKVKXyiWEEOmr0GA7qnil-vU-Sz0FPHRb7kCmqY4dw/viewform" target="_blank" rel="noopener"><svg class="i"><use href="#i-flag"/></svg>الإبلاغ عن خطأ</a>
+      </div>
+      <div class="meta">
+        <span>تاريخ الدرس: 6 ربيع الآخر 1448</span>
+        <span>أُضيف للموقع: 23/09/2026</span>
+        <span>عدد مرات الاستماع: 84</span>
+      </div>
+
+      <section class="card" aria-labelledby="bmh">
+        <div class="card-h"><h2 id="bmh">علاماتي في هذا الدرس</h2><button id="clearMarks" hidden>مسح الكل</button></div>
+        <div id="bmList"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-h"><h2>اختصارات لوحة المفاتيح</h2></div>
+        <div class="about" style="padding-bottom:10px"><p>تُحفظ علاماتك وموضع التوقف على هذا الجهاز فقط، وتعود إليه عند فتح الدرس مرة أخرى.</p></div>
+        <div class="kb">
+          <span><kbd>مسافة</kbd> تشغيل أو إيقاف</span>
+          <span><kbd>←</kbd> تقديم 15 ثانية</span>
+          <span><kbd>→</kbd> رجوع 15 ثانية</span>
+          <span><kbd>↑</kbd> <kbd>↓</kbd> الصوت</span>
+          <span><kbd>B</kbd> حفظ علامة</span>
+        </div>
+      </section>
+    </main>
+
+    <aside class="side">
+      <section class="card">
+        <div class="card-h"><h2>دروس أخرى من الدورات</h2></div>
+        <div class="cl">
+          <a class="now" href="https://www.elbeialy.com/catplay.php?catsmktba=5015" aria-current="page"><b>الدورة 832: شرح عدة رسائل</b><small>6 ربيع الآخر 1448، هذا الدرس منها</small></a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=5014"><b>الدورة 831</b><small>30 ربيع الأول 1448</small></a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=5013"><b>الدورة 830</b><small>28 ربيع الأول 1448</small></a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=5012"><b>الدورة 829</b><small>18 ربيع الأول 1448</small></a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=5011"><b>الدورة 828</b><small>18 ربيع الأول 1448</small></a>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card-h"><h2>أقسام ذات صلة</h2></div>
+        <div class="chips">
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=51">الدورات العلمية</a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=59">السلاسل العلمية</a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=64">علم العقيدة</a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=571">الفرق والملل</a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=522">السياسة الشرعية</a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=48">الردود العلمية</a>
+        </div>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>جميع الحقوق محفوظة لكل مسلم، وجزى الله خيرًا كل من نشر هذا الموقع.</span>
+    <a href="https://www.elbeialy.com/index.php">العودة للموقع</a>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const au=$('#au'), seek=$('#seek'), playBtn=$('#play'), pi=$('#pi'), state=$('#state');
+const KEY='lesson-832-2', SPEEDS=[0.75,1,1.25,1.5,1.75,2];
+let speedI=1, dragging=false, marks=[], store={};
+
+/* تخزين محلي مع بديل في الذاكرة */
+const sget=k=>{try{return localStorage.getItem(k);}catch(e){return store[k]??null;}};
+const sset=(k,v)=>{try{localStorage.setItem(k,v);}catch(e){store[k]=v;}};
+
+const fmt=t=>{if(!isFinite(t))return '--:--';t=Math.floor(t);const h=Math.floor(t/3600),m=Math.floor(t%3600/60),s=t%60;
+  return (h?h+':'+String(m).padStart(2,'0'):m)+':'+String(s).padStart(2,'0');};
+const toast=(m)=>{const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('on'),2200);};
+
+function paint(){
+  const d=au.duration||0, c=au.currentTime||0;
+  if(!dragging) seek.value=d?Math.round(c/d*1000):0;
+  seek.style.setProperty('--p',(seek.value/10)+'%');
+  $('#cur').textContent=fmt(c); $('#dur').textContent=fmt(d);
+}
+function setIcon(){
+  const playing=!au.paused;
+  pi.innerHTML=`<use href="#${playing?'i-pause':'i-play'}"/>`;
+  playBtn.setAttribute('aria-label',playing?'إيقاف مؤقت':'تشغيل');
+}
+function toggle(){ au.paused?au.play().catch(()=>{state.textContent='تعذّر تشغيل الصوت. تأكد من اتصالك بالإنترنت أو حمّل الملف.';}):au.pause(); }
+function skip(s){ au.currentTime=Math.max(0,Math.min((au.duration||1e9),au.currentTime+s)); }
+
+playBtn.onclick=toggle;
+$('#back').onclick=()=>skip(-15);
+$('#fwd').onclick=()=>skip(15);
+$('#speed').onclick=()=>{speedI=(speedI+1)%SPEEDS.length;au.playbackRate=SPEEDS[speedI];$('#speed').textContent=SPEEDS[speedI]+'×';sset('speed',speedI);};
+$('#vol').oninput=e=>{au.volume=+e.target.value;};
+seek.addEventListener('input',()=>{dragging=true;const d=au.duration||0;$('#cur').textContent=fmt(seek.value/1000*d);seek.style.setProperty('--p',(seek.value/10)+'%');});
+seek.addEventListener('change',()=>{const d=au.duration||0;if(d)au.currentTime=seek.value/1000*d;dragging=false;});
+
+au.addEventListener('timeupdate',()=>{paint();if(!au.paused&&Math.floor(au.currentTime)%5===0)sset(KEY,String(Math.floor(au.currentTime)));});
+au.addEventListener('play',setIcon); au.addEventListener('pause',setIcon);
+au.addEventListener('waiting',()=>state.textContent='جارٍ التحميل...');
+au.addEventListener('playing',()=>state.textContent='');
+au.addEventListener('ended',()=>{sset(KEY,'0');state.textContent='انتهى الدرس. جزاك الله خيرًا.';});
+au.addEventListener('error',()=>{state.textContent='تعذّر تحميل الصوت. جرّب «تحميل الدرس» أو أعد المحاولة لاحقًا.';});
+au.addEventListener('loadedmetadata',()=>{
+  const saved=+sget(KEY)||0;
+  if(saved>10&&saved<au.duration-15){au.currentTime=saved;state.textContent='استأنفنا من حيث توقفت: '+fmt(saved);}
+  paint();drawMarks();
+});
+
+/* العلامات */
+function loadMarks(){try{marks=JSON.parse(sget(KEY+'-m')||'[]');}catch(e){marks=[];}}
+function saveMarks(){sset(KEY+'-m',JSON.stringify(marks));}
+function drawMarks(){
+  const list=$('#bmList'), d=au.duration||0; list.innerHTML='';
+  $('#marks').innerHTML=d?marks.map(t=>`<i style="inset-inline-start:${t/d*100}%"></i>`).join(''):'';
+  $('#clearMarks').hidden=!marks.length;
+  if(!marks.length){list.innerHTML='<p class="empty">لم تحفظ علامات بعد. اضغط «حفظ علامة هنا» عند فائدة تريد العودة إليها.</p>';return;}
+  marks.slice().sort((a,b)=>a-b).forEach(t=>{
+    const row=document.createElement('div');row.className='bm';
+    row.innerHTML=`<button class="go"><time>${fmt(t)}</time><span>الانتقال إلى هذا الموضع</span></button><button class="del">حذف</button>`;
+    row.querySelector('.go').onclick=()=>{au.currentTime=t;au.play().catch(()=>{});};
+    row.querySelector('.del').onclick=()=>{marks=marks.filter(x=>x!==t);saveMarks();drawMarks();};
+    list.appendChild(row);
+  });
+}
+function addMark(){
+  const t=Math.floor(au.currentTime);
+  if(marks.includes(t)){toast('هذه العلامة محفوظة');return;}
+  marks.push(t);saveMarks();drawMarks();toast('حُفظت علامة عند '+fmt(t));
+}
+$('#mark').onclick=addMark;
+$('#clearMarks').onclick=()=>{if(confirm('مسح كل العلامات في هذا الدرس؟')){marks=[];saveMarks();drawMarks();}};
+
+/* مشاركة */
+$('#share').onclick=async()=>{
+  const url='https://www.elbeialy.com/play.php?catsmktba=50448', title=document.title;
+  try{ if(navigator.share){await navigator.share({title,url});return;} await navigator.clipboard.writeText(url);toast('نُسخ رابط الدرس'); }
+  catch(e){ toast('الرابط: '+url); }
+};
+
+/* لوحة المفاتيح */
+document.addEventListener('keydown',e=>{
+  if(/INPUT|TEXTAREA|BUTTON|A/.test(document.activeElement.tagName)&&e.key===' ')return;
+  if(e.target.id==='seek'||e.target.id==='vol')return;
+  switch(e.key){
+    case ' ':e.preventDefault();toggle();break;
+    case 'ArrowLeft':skip(15);break;
+    case 'ArrowRight':skip(-15);break;
+    case 'ArrowUp':e.preventDefault();au.volume=Math.min(1,au.volume+.1);$('#vol').value=au.volume;break;
+    case 'ArrowDown':e.preventDefault();au.volume=Math.max(0,au.volume-.1);$('#vol').value=au.volume;break;
+    case 'b':case 'B':addMark();break;
+  }
+});
+
+/* الوضع الداكن */
+const root=document.documentElement;
+try{const s=localStorage.getItem('theme');if(s)root.dataset.theme=s;}catch(e){}
+$('#theme').onclick=()=>{
+  const dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+  root.dataset.theme=dark?'light':'dark';
+  try{localStorage.setItem('theme',root.dataset.theme);}catch(e){}
+};
+
+/* بدء */
+const sp=+sget('speed'); if(sp>=0&&sp<SPEEDS.length){speedI=sp;au.playbackRate=SPEEDS[sp];$('#speed').textContent=SPEEDS[sp]+'×';}
+loadMarks();drawMarks();paint();setIcon();
+</script>
+</body>
+</html>
