@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الشيخ هشام البيلي | دروس وشروح علمية</title>
+<meta name="description" content="دروس وشروح ومحاضرات وفتاوى لفضيلة الشيخ هشام بن فؤاد البيلي، مقروءة ومسموعة ومرئية.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F8F7; --surface:#FFFFFF; --moss:#E4ECE8; --ink:#12201E; --ink2:#46574F;
+  --green:#0E4A43; --green-hi:#16665C; --on-green:#F3F8F6; --brass:#8A5E0E; --brass-bg:#C9962F; --line:#D0DBD6;
+  --pattern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%230E4A43' stroke-width='1' opacity='.11'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3Ccircle cx='36' cy='36' r='6'/%3E%3C/g%3E%3C/svg%3E");
+  --serif:'Amiri','Noto Naskh Arabic',serif; --sans:'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0B1513; --surface:#12211E; --moss:#183029; --ink:#E7EFEC; --ink2:#A3B6AF;
+    --green:#4FA896; --green-hi:#6CC3B1; --on-green:#07110F; --brass:#E0AD4C; --brass-bg:#D9A441; --line:#244039;
+    --pattern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%235FB3A3' stroke-width='1' opacity='.13'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3Ccircle cx='36' cy='36' r='6'/%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0B1513; --surface:#12211E; --moss:#183029; --ink:#E7EFEC; --ink2:#A3B6AF;
+  --green:#4FA896; --green-hi:#6CC3B1; --on-green:#07110F; --brass:#E0AD4C; --brass-bg:#D9A441; --line:#244039;
+  --pattern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%235FB3A3' stroke-width='1' opacity='.13'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3Ccircle cx='36' cy='36' r='6'/%3E%3C/g%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+ul{list-style:none;padding:0}
+:focus-visible{outline:3px solid var(--brass-bg);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;flex:none}
+.brand svg{width:38px;height:38px;color:var(--green)}
+.brand b{display:block;font-family:var(--serif);font-size:1.3rem;line-height:1.2}
+.brand small{display:block;font-size:.78rem;color:var(--ink2);line-height:1.3}
+.nav{display:none;gap:4px;margin-inline-start:12px}
+.nav a{padding:6px 12px;border-radius:8px;font-size:.95rem;color:var(--ink2)}
+.nav a:hover{background:var(--moss);color:var(--ink)}
+.tools{display:flex;gap:8px;margin-inline-start:auto}
+.ibtn{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 14px;border:1px solid var(--line);background:var(--surface);border-radius:10px}
+.ibtn:hover{border-color:var(--green)}
+.ibtn svg{width:20px;height:20px}
+.ibtn.sq{width:42px;padding:0;justify-content:center}
+@media (min-width:1000px){.nav{display:flex}}
+
+/* hero */
+.hero{position:relative;padding:56px 0 64px;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background:var(--pattern);-webkit-mask-image:linear-gradient(to left,#000 0,transparent 70%);mask-image:linear-gradient(to left,#000 0,transparent 70%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;gap:40px}
+@media (min-width:980px){.hero .wrap{grid-template-columns:1fr 1fr;gap:56px;align-items:start}}
+.hero h1{font-family:var(--serif);font-size:clamp(2.5rem,6vw,4.4rem);line-height:1.18;font-weight:700;color:var(--green)}
+.hero h1 span{display:block;font-size:.5em;font-weight:400;color:var(--brass);line-height:1.6}
+.hero p.lead{margin-top:18px;max-width:34em;color:var(--ink2);font-size:1.05rem}
+.hero-in{animation:rise .7s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero-in{animation:none}html{scroll-behavior:auto}}
+
+.search{position:relative;margin-top:28px;max-width:560px}
+.search label{position:absolute;inset-inline-start:16px;top:50%;transform:translateY(-50%);color:var(--ink2);display:flex}
+.search label svg{width:22px;height:22px}
+.search input{width:100%;height:56px;padding:0 50px 0 18px;border:1.5px solid var(--green);background:var(--surface);color:var(--ink);border-radius:12px;font:inherit;font-size:1.02rem}
+.search input::placeholder{color:var(--ink2)}
+.search kbd{position:absolute;inset-inline-end:14px;top:50%;transform:translateY(-50%);font:inherit;font-size:.8rem;border:1px solid var(--line);border-radius:6px;padding:0 8px;color:var(--ink2);background:var(--paper)}
+.results{position:absolute;inset-inline:0;top:calc(100% + 6px);z-index:10;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.14);max-height:340px;overflow:auto;padding:6px}
+.results[hidden]{display:none}
+.results a{display:flex;justify-content:space-between;gap:12px;padding:9px 12px;border-radius:8px}
+.results a small{color:var(--ink2);font-size:.82rem;flex:none}
+.results a[aria-selected="true"],.results a:hover{background:var(--moss)}
+.results .none{padding:12px;color:var(--ink2)}
+
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.quick a{padding:5px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:.92rem}
+.quick a:hover{border-color:var(--green);color:var(--green)}
+
+/* latest panel */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.panel-h{padding:18px 20px 14px;border-bottom:1px solid var(--line)}
+.panel-h h2{font-family:var(--serif);font-size:1.5rem;line-height:1.3}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tabs button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:2px 12px;font-size:.86rem}
+.tabs button[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--on-green)}
+.lessons{max-height:470px;overflow:auto}
+.lesson{display:flex;gap:14px;align-items:center;padding:13px 20px;border-bottom:1px solid var(--line)}
+.lesson:last-child{border-bottom:0}
+.lesson:hover{background:var(--moss)}
+.play{flex:none;width:40px;height:40px;border-radius:50%;background:var(--green);color:var(--on-green);display:grid;place-items:center}
+.play svg{width:16px;height:16px;margin-inline-end:-2px;transform:scaleX(-1)}
+.lesson b{display:block;font-weight:500;line-height:1.5}
+.lesson small{display:block;color:var(--ink2);font-size:.86rem;line-height:1.5}
+
+/* sections */
+.sec{padding:64px 0}
+.sec.alt{background:var(--moss)}
+.sec-h{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:28px}
+.sec-h h2{font-family:var(--serif);font-size:clamp(1.8rem,3.4vw,2.5rem);line-height:1.3;color:var(--green)}
+.sec-h p{color:var(--ink2);margin-top:4px}
+.more{flex:none;color:var(--green);font-weight:500;border-bottom:1.5px solid currentColor;padding-bottom:1px}
+.more:hover{color:var(--brass)}
+
+/* live strip */
+.live{background:var(--green);color:var(--on-green)}
+.live .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;padding-block:20px}
+.live .dot{width:10px;height:10px;border-radius:50%;background:var(--brass-bg);box-shadow:0 0 0 4px color-mix(in srgb,var(--brass-bg) 30%,transparent)}
+.live p{flex:1 1 280px;font-size:1.02rem}
+.live a.b{border:1.5px solid currentColor;border-radius:10px;padding:6px 16px;font-weight:500}
+.live a.b:hover{background:var(--on-green);color:var(--green)}
+
+/* libraries */
+.libs{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.lib{display:flex;flex-direction:column;gap:10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);min-height:200px}
+.lib svg{width:38px;height:38px;color:var(--brass)}
+.lib h3{font-family:var(--serif);font-size:1.6rem;line-height:1.3;margin-top:auto}
+.lib p{color:var(--ink2);font-size:.95rem;line-height:1.6}
+.lib:hover{border-color:var(--green);transform:translateY(-2px);transition:transform .15s}
+.lib.feat{background:var(--green);color:var(--on-green);border-color:var(--green)}
+.lib.feat svg{color:var(--brass-bg)}
+.lib.feat p{color:inherit;opacity:.85}
+
+/* topics */
+.topics{display:grid;gap:0;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));border-top:1px solid var(--line);border-inline-start:1px solid var(--line)}
+.topics a{padding:18px 20px;border-bottom:1px solid var(--line);border-inline-end:1px solid var(--line);background:var(--surface);font-weight:500}
+.topics a:hover{background:var(--green);color:var(--on-green)}
+
+/* courses */
+.two{display:grid;gap:36px}
+@media (min-width:960px){.two{grid-template-columns:1.25fr 1fr;gap:48px}}
+.course{display:flex;gap:18px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}
+.course:first-child{border-top:1px solid var(--line)}
+.course i{font-style:normal;font-family:var(--serif);font-size:1.9rem;line-height:1;color:var(--brass);min-width:3.1ch;font-variant-numeric:tabular-nums}
+.course span{font-weight:500}
+.course small{display:block;color:var(--ink2);font-size:.86rem}
+.course:hover span{color:var(--green);text-decoration:underline;text-underline-offset:4px}
+.side h3{font-family:var(--serif);font-size:1.45rem;margin-bottom:12px}
+.years{display:flex;flex-wrap:wrap;gap:8px}
+.years a{padding:4px 14px;border:1px solid var(--line);background:var(--surface);border-radius:8px;font-size:.93rem}
+.years a:hover{border-color:var(--green);color:var(--green)}
+.side + .side{margin-top:30px}
+.side .list a{display:block;padding:8px 0;border-bottom:1px solid var(--line)}
+.side .list a:hover{color:var(--green)}
+
+/* sunan */
+.books{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.book{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:190px;padding:20px;background:var(--green);color:var(--on-green);border-radius:6px 14px 14px 6px;border-inline-start:8px solid var(--brass-bg);overflow:hidden}
+.book::before{content:"";position:absolute;inset:0;background:var(--pattern);opacity:.7;filter:invert(1);mix-blend-mode:soft-light;pointer-events:none}
+.book:nth-child(even){background:var(--green-hi)}
+.book b{position:relative;font-family:var(--serif);font-size:1.45rem;line-height:1.35}
+.book small{position:relative;opacity:.85}
+.book:hover{filter:brightness(1.1)}
+:root[data-theme="dark"] .book,:root[data-theme="dark"] .book:nth-child(even){color:var(--on-green)}
+
+/* schools */
+.schools{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.school{padding:28px;border:1px solid var(--line);background:var(--surface);border-radius:var(--r)}
+.school h3{font-family:var(--serif);font-size:1.5rem;color:var(--green);line-height:1.35}
+.school p{margin:8px 0 18px;color:var(--ink2);font-size:.97rem}
+.school a{color:var(--green);font-weight:500;border-bottom:1.5px solid currentColor}
+.school a + a{margin-inline-start:16px}
+
+/* fatawa */
+.fatwa{display:grid;gap:24px;padding:36px;background:var(--green);color:var(--on-green);border-radius:var(--r);position:relative;overflow:hidden}
+.fatwa::before{content:"";position:absolute;inset:0;background:var(--pattern);filter:invert(1);opacity:.5;pointer-events:none;-webkit-mask-image:linear-gradient(to right,#000,transparent 70%);mask-image:linear-gradient(to right,#000,transparent 70%)}
+.fatwa>*{position:relative}
+@media (min-width:860px){.fatwa{grid-template-columns:1.4fr 1fr;align-items:center;padding:48px}}
+.fatwa h2{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);line-height:1.25}
+.fatwa p{margin-top:8px;opacity:.9;max-width:30em}
+.fatwa .acts{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:12px;font-weight:600;border:1.5px solid var(--on-green)}
+.btn.solid{background:var(--on-green);color:var(--green)}
+.btn:hover{filter:brightness(.93)}
+
+/* files */
+.files{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.file{display:flex;gap:16px;padding:22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.file:hover{border-color:var(--green)}
+.file svg{flex:none;width:28px;height:28px;color:var(--brass);margin-top:3px}
+.file b{font-weight:500;line-height:1.6}
+.file small{color:var(--ink2);display:block;font-size:.86rem}
+
+/* tarajim */
+.tr{display:flex;flex-wrap:wrap;gap:10px}
+.tr a{padding:10px 20px;border:1px solid var(--line);background:var(--surface);border-radius:10px;font-family:var(--serif);font-size:1.2rem}
+.tr a:hover{background:var(--green);color:var(--on-green);border-color:var(--green)}
+
+/* footer */
+footer{background:var(--ink);color:var(--paper);padding:56px 0 28px}
+:root[data-theme="dark"] footer{background:#050B0A;color:#E7EFEC}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) footer{background:#050B0A;color:#E7EFEC}}
+.fcols{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+footer h3{font-family:var(--serif);font-size:1.3rem;margin-bottom:10px;color:#E3B55B}
+footer li a{display:block;padding:3px 0;opacity:.85}
+footer li a:hover{opacity:1;text-decoration:underline}
+.copy{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);font-size:.9rem;opacity:.8}
+
+/* all sections dialog */
+dialog{width:min(980px,100% - 24px);max-height:88vh;margin:auto;padding:0;border:1px solid var(--line);border-radius:18px;background:var(--paper);color:var(--ink);overflow:hidden}
+dialog::backdrop{background:rgba(5,15,13,.6)}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--line)}
+.dh h2{font-family:var(--serif);font-size:1.6rem}
+.db{padding:22px;overflow:auto;max-height:calc(88vh - 70px);columns:260px;column-gap:32px}
+.grp{break-inside:avoid;margin-bottom:24px}
+.grp h3{font-family:var(--serif);font-size:1.25rem;color:var(--green);margin-bottom:4px}
+.grp h3 a:hover{text-decoration:underline}
+.grp li a{display:block;padding:3px 0;font-size:.95rem;color:var(--ink2)}
+.grp li a:hover{color:var(--ink)}
+</style>
+</head>
+<body id="top">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="22" height="22"/><rect x="9" y="9" width="22" height="22" transform="rotate(45 20 20)"/><circle cx="20" cy="20" r="3.5" fill="currentColor"/></g></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></g></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 16 16"><path d="M3 1.5v13l11-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-book" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><path d="M20 10c-4-3-9-3-14-2v22c5-1 10-1 14 2 4-3 9-3 14-2V8c-5-1-10-1-14 2Z"/><path d="M20 10v22"/></g></symbol>
+  <symbol id="i-audio" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24v-4a14 14 0 0 1 28 0v4"/><rect x="5" y="23" width="7" height="11" rx="2"/><rect x="28" y="23" width="7" height="11" rx="2"/></g></symbol>
+  <symbol id="i-video" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><rect x="4" y="8" width="32" height="24" rx="4"/><path d="m16 14 9 6-9 6z"/></g></symbol>
+  <symbol id="i-live" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="20" cy="20" r="3.5" fill="currentColor"/><path d="M12 12a11 11 0 0 0 0 16M28 12a11 11 0 0 1 0 16M7 7a18 18 0 0 0 0 26M33 7a18 18 0 0 1 0 26"/></g></symbol>
+  <symbol id="i-doc" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M7 3h10l5 5v17H7z"/><path d="M17 3v5h5M11 14h7M11 19h7"/></g></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="الصفحة الرئيسية">
+      <svg><use href="#star"/></svg>
+      <span><b>الشيخ هشام البيلي</b><small>الموقع الرسمي</small></span>
+    </a>
+    <nav class="nav" aria-label="التنقل الرئيسي">
+      <a href="#latest">جديد الدروس</a>
+      <a href="#libraries">المكتبات</a>
+      <a href="#series">السلاسل العلمية</a>
+      <a href="#courses">الدورات العلمية</a>
+      <a href="#fatawa">الفتاوى</a>
+      <a href="#files">ملفات مهمة</a>
+      <a href="https://www.elbeialy.com/pageother.php?catsmktba=37" target="_blank" rel="noopener">سيرة الشيخ</a>
+    </nav>
+    <div class="tools">
+      <button class="ibtn sq" id="theme" aria-label="تبديل الوضع الداكن"><svg><use href="#i-moon"/></svg></button>
+      <button class="ibtn" id="openAll"><svg><use href="#i-menu"/></svg><span>كل الأقسام</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="latest">
+  <div class="wrap">
+    <div class="hero-in">
+      <h1><span>الموقع الرسمي لفضيلة الشيخ</span>هشام بن فؤاد البيلي</h1>
+      <p class="lead">دروس وشروح علمية ومحاضرات وخطب وفتاوى، مقروءة ومسموعة ومرئية، مرتبة حسب العلم والكتاب لتصل إلى ما تريد بسرعة.</p>
+      <div class="search" role="search">
+        <label for="q"><svg><use href="#i-search"/></svg><span class="sr">ابحث في الموقع</span></label>
+        <input id="q" type="search" autocomplete="off" placeholder="ابحث عن سلسلة أو دورة أو كتاب أو فتوى" role="combobox" aria-expanded="false" aria-controls="res" aria-autocomplete="list" style="padding-inline-start:50px;padding-inline-end:56px">
+        <kbd aria-hidden="true">/</kbd>
+        <div class="results" id="res" role="listbox" hidden></div>
+      </div>
+      <div class="quick">
+        <a href="https://www.elbeialy.com/catplay.php?catsmktba=59" target="_blank" rel="noopener">السلاسل العلمية</a>
+        <a href="https://www.elbeialy.com/catplay.php?catsmktba=51" target="_blank" rel="noopener">الدورات العلمية</a>
+        <a href="https://www.elbeialy.com/catplay.php?catsmktba=2396" target="_blank" rel="noopener">الخطب المنبرية</a>
+        <a href="https://www.elbeialy.com/catplay.php?catsmktba=454&action=classify" target="_blank" rel="noopener">الفتاوى الشرعية</a>
+        <a href="https://www.elbeialy.com/catplay.php?catsmktba=2956" target="_blank" rel="noopener">القرآن الكريم</a>
+      </div>
+    </div>
+
+    <div class="panel hero-in" style="animation-delay:.12s">
+      <div class="panel-h">
+        <h2>جديد الدروس</h2>
+        <div class="tabs" id="tabs" role="group" aria-label="تصفية حسب الشرح"></div>
+      </div>
+      <div class="lessons" id="lessons"></div>
+    </div>
+  </div>
+</section>
+
+<section class="live">
+  <div class="wrap">
+    <span class="dot" aria-hidden="true"></span>
+    <p>البث المباشر لدروس الشيخ عبر تطبيق ميكسلر، وتطبيق أندرويد للاستماع في أي وقت.</p>
+    <a class="b" href="https://www.elbeialy.com/pageother.php?catsmktba=44" target="_blank" rel="noopener">صفحة البث المباشر</a>
+    <a class="b" href="https://www.elbeialy.com/Android/Radio_Elbeialy.apk" rel="noopener">تحميل تطبيق أندرويد</a>
+  </div>
+</section>
+
+<section class="sec" id="libraries">
+  <div class="wrap">
+    <div class="sec-h"><div><h2>المكتبات</h2><p>اختر الصيغة التي تناسبك.</p></div></div>
+    <div class="libs">
+      <a class="lib feat" href="https://www.elbeialy.com/pageother.php?catsmktba=115" target="_blank" rel="noopener">
+        <svg><use href="#i-audio"/></svg><h3>المكتبة الصوتية</h3><p>الدروس والشروح والمحاضرات للاستماع والتحميل.</p></a>
+      <a class="lib" href="https://www.elbeialy.com/catplay.php?catsmktba=6" target="_blank" rel="noopener">
+        <svg><use href="#i-video"/></svg><h3>المكتبة المرئية</h3><p>الدروس والخطب والسلاسل التربوية المرئية.</p></a>
+      <a class="lib" href="https://www.elbeialy.com/catplay.php?catsmktba=4" target="_blank" rel="noopener">
+        <svg><use href="#i-book"/></svg><h3>المكتبة المقروءة</h3><p>الكتب والرسائل والتفريغات.</p></a>
+      <a class="lib" href="https://www.elbeialy.com/pageother.php?catsmktba=44" target="_blank" rel="noopener">
+        <svg><use href="#i-live"/></svg><h3>البث المباشر</h3><p>تابع الدروس لحظة بلحظة.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="series">
+  <div class="wrap">
+    <div class="sec-h"><div><h2>السلاسل العلمية</h2><p>شروح متتابعة مرتبة حسب العلم.</p></div><a class="more" href="https://www.elbeialy.com/catplay.php?catsmktba=59" target="_blank" rel="noopener">كل السلاسل</a></div>
+    <div class="topics" id="topics"></div>
+  </div>
+</section>
+
+<section class="sec" id="courses">
+  <div class="wrap two">
+    <div>
+      <div class="sec-h"><div><h2>الدورات العلمية</h2><p>أحدث الدورات في شرح رسائل السلف وعلماء الأمة.</p></div><a class="more" href="https://www.elbeialy.com/catplay.php?catsmktba=51" target="_blank" rel="noopener">كل الدورات</a></div>
+      <div id="courseList"></div>
+    </div>
+    <aside>
+      <div class="side">
+        <h3>دروس أكاديمية الرشاد العلمية</h3>
+        <div class="years" id="years"></div>
+      </div>
+      <div class="side">
+        <h3>دروس ومحاضرات</h3>
+        <div class="list">
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=148" target="_blank" rel="noopener">المحاضرات العلمية</a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=561" target="_blank" rel="noopener">السلاسل التربوية</a>
+          <a href="https://www.elbeialy.com/catplay.php?catsmktba=49" target="_blank" rel="noopener">دروس عالمية: مكة والمدينة والكويت</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="sec alt" id="sunan">
+  <div class="wrap">
+    <div class="sec-h"><div><h2>شروح كتب السنة كاملة</h2><p>شرح متكامل لأمهات كتب الحديث.</p></div></div>
+    <div class="books">
+      <a class="book" href="https://www.elbeialy.com/catplay.php?catsmktba=2660" target="_blank" rel="noopener"><b>سنن النسائي</b><small>شرح كامل</small></a>
+      <a class="book" href="https://www.elbeialy.com/catplay.php?catsmktba=2679" target="_blank" rel="noopener"><b>سنن الترمذي</b><small>شرح كامل</small></a>
+      <a class="book" href="https://www.elbeialy.com/catplay.php?catsmktba=2682" target="_blank" rel="noopener"><b>سنن الدارمي</b><small>شرح كامل</small></a>
+      <a class="book" href="https://www.elbeialy.com/catplay.php?catsmktba=59" target="_blank" rel="noopener"><b>سنن أبي داود</b><small>شرح كامل</small></a>
+      <a class="book" href="https://www.elbeialy.com/catplay.php?catsmktba=2681" target="_blank" rel="noopener"><b>سنن ابن ماجه</b><small>شرح كامل</small></a>
+      <a class="book" href="https://www.elbeialy.com/catplay.php?catsmktba=2683" target="_blank" rel="noopener"><b>موطأ مالك</b><small>شرح كامل</small></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="schools">
+  <div class="wrap">
+    <div class="sec-h"><div><h2>الأكاديميات والمدارس العلمية</h2><p>برامج لطالب العلم من التأسيس إلى المتون والشروح.</p></div></div>
+    <div class="schools">
+      <div class="school"><h3>أكاديمية الرشاد العلمية</h3><p>للتأسيس في مقدمات العلوم الشرعية، للتعليم عن بعد، بإشراف الشيخ هشام البيلي.</p>
+        <a href="https://www.elbeialy.com/pageother.php?catsmktba=115" target="_blank" rel="noopener">عن الأكاديمية</a><a href="https://www.elbeialy.com/catplay.php?catsmktba=3904" target="_blank" rel="noopener">كتب الأكاديمية</a></div>
+      <div class="school"><h3>مدرسة غيث الأثر السلفية</h3><p>قسم حفظ المتون العلمية وقسم مذاكرة الشروحات، والكتب مقروءة ومسموعة.</p>
+        <a href="https://www.elbeialy.com/pageother.php?catsmktba=3742" target="_blank" rel="noopener">حفظ المتون</a><a href="https://www.elbeialy.com/pageother.php?catsmktba=3741" target="_blank" rel="noopener">مذاكرة الشروح</a></div>
+      <div class="school"><h3>مدرسة المتون العلمية</h3><p>المتون العلمية التي تُحفظ وتُشرح، مرتبة للطالب.</p>
+        <a href="https://www.elbeialy.com/pageother.php?catsmktba=284" target="_blank" rel="noopener">تصفح المدرسة</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="fatawa" style="padding-top:0">
+  <div class="wrap">
+    <div class="fatwa">
+      <div><h2>برنامج فتاوى الأربعاء</h2><p>استمع إلى تسجيلات البرنامج، أو أرسل سؤالك ليُجاب عنه.</p></div>
+      <div class="acts">
+        <a class="btn solid" href="https://www.elbeialy.com/catplay.php?catsmktba=3613" target="_blank" rel="noopener">استمع للتسجيلات</a>
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdTJSiWXDjUqJAE3qscyljeVf1GHCrSlXToiaDmOiULNkixLQ/viewform" target="_blank" rel="noopener">أرسل سؤالك</a>
+        <a class="btn" href="https://www.elbeialy.com/catplay.php?catsmktba=454&action=classify" target="_blank" rel="noopener">أرشيف الفتاوى</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="files">
+  <div class="wrap">
+    <div class="sec-h"><div><h2>ملفات مهمة</h2><p>جهود الشيخ في خدمة العلم وأهله.</p></div><a class="more" href="https://www.elbeialy.com/pageother.php?catsmktba=3531" target="_blank" rel="noopener">كل الملفات</a></div>
+    <div class="files">
+      <a class="file" href="https://www.elbeialy.com/pageother.php?catsmktba=3622" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg><span><b>خدمة كتاب التوحيد</b><small>أربعة عشر شرحًا بين منتهٍ ومستمر</small></span></a>
+      <a class="file" href="https://www.elbeialy.com/pageother.php?catsmktba=3532" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg><span><b>العلامة الألباني</b><small>الترجمة له ونشر علمه</small></span></a>
+      <a class="file" href="https://www.elbeialy.com/pageother.php?catsmktba=3533" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg><span><b>العلامة ربيع بن هادي المدخلي</b><small>الترجمة له ونشر علمه</small></span></a>
+      <a class="file" href="https://www.elbeialy.com/pageother.php?catsmktba=3562" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg><span><b>الشيخ عبيد الجابري</b><small>الكتب والرسائل التي شرحها الشيخ</small></span></a>
+      <a class="file" href="https://www.elbeialy.com/catplay.php?catsmktba=5007" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg><span><b>الإمام أبو حنيفة النعمان</b><small>ملف الترجمة له والذب عنه</small></span></a>
+      <a class="file" href="https://www.elbeialy.com/catplay.php?catsmktba=3431" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg><span><b>إحصائيات بالجهود</b><small>حصر دورات الشيخ ودروسه وكتبه</small></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="tarajim">
+  <div class="wrap">
+    <div class="sec-h"><div><h2>تراجم الأئمة الأعلام</h2></div><a class="more" href="https://www.elbeialy.com/catplay.php?catsmktba=2398" target="_blank" rel="noopener">كل التراجم</a></div>
+    <div class="tr">
+      <a href="https://www.elbeialy.com/catplay.php?catsmktba=2398" target="_blank" rel="noopener">الأئمة الأربعة</a>
+      <a href="https://www.elbeialy.com/catplay.php?catsmktba=2398" target="_blank" rel="noopener">أئمة الحديث</a>
+      <a href="https://www.elbeialy.com/catplay.php?catsmktba=2398" target="_blank" rel="noopener">علماء الأمة</a>
+      <a href="https://www.elbeialy.com/catplay.php?catsmktba=2398" target="_blank" rel="noopener">أئمة الدعوة</a>
+      <a href="https://www.elbeialy.com/catplay.php?catsmktba=2398" target="_blank" rel="noopener">علماء العصر</a>
+      <a href="https://www.elbeialy.com/catplay.php?catsmktba=2398" target="_blank" rel="noopener">علماء مصر</a>
+      <a href="https://www.elbeialy.com/catplay.php?catsmktba=3781" target="_blank" rel="noopener">صوتيات صغيرة للتراجم</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><h3>الموقع</h3><ul>
+        <li><a href="https://www.elbeialy.com/pageother.php?catsmktba=37" target="_blank" rel="noopener">سيرة الشيخ</a></li>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=1234" target="_blank" rel="noopener">تراجعات الشيخ</a></li>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=2979" target="_blank" rel="noopener">مكتبة الموقع</a></li>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=3762" target="_blank" rel="noopener">قسم التفريغات</a></li></ul></div>
+      <div><h3>العلوم</h3><ul>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=64" target="_blank" rel="noopener">علم العقيدة</a></li>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=72" target="_blank" rel="noopener">علم التفسير</a></li>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=79" target="_blank" rel="noopener">علم التجويد</a></li>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=71" target="_blank" rel="noopener">الفقه الحنبلي</a></li></ul></div>
+      <div><h3>وقفات ورسائل</h3><ul>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=2397" target="_blank" rel="noopener">وقفات مع مناسبات</a></li>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=2392" target="_blank" rel="noopener">رسائل دعوية</a></li>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=3826" target="_blank" rel="noopener">بطاقات دعوية</a></li>
+        <li><a href="https://www.elbeialy.com/catplay.php?catsmktba=2785" target="_blank" rel="noopener">مصطلحات شرعية</a></li></ul></div>
+      <div><h3>تابعنا</h3><ul>
+        <li><a href="https://www.youtube.com/elbeialytv" target="_blank" rel="noopener">قناة يوتيوب</a></li>
+        <li><a href="https://www.facebook.com/albeialy" target="_blank" rel="noopener">فيسبوك</a></li>
+        <li><a href="https://twitter.com/elbeialy_com" target="_blank" rel="noopener">تويتر</a></li>
+        <li><a href="https://www.elbeialy.com/Android/Radio_Elbeialy.apk">تطبيق أندرويد</a></li></ul></div>
+    </div>
+    <p class="copy">جميع الحقوق محفوظة لكل مسلم، وجزى الله خيرًا كل من نشر هذا الموقع وما يحتويه من مواد شرعية.</p>
+  </div>
+</footer>
+
+<dialog id="all" aria-label="كل الأقسام">
+  <div class="dh"><h2>كل الأقسام</h2><button class="ibtn" id="closeAll">إغلاق</button></div>
+  <div class="db" id="allBody"></div>
+</dialog>
+
+<script>
+const B='https://www.elbeialy.com/';
+const c=id=>B+'catplay.php?catsmktba='+id, p=id=>B+'pageother.php?catsmktba='+id, l=id=>B+'play.php?catsmktba='+id;
+
+/* دليل الأقسام: يُستخدم في البحث وقائمة كل الأقسام */
+const GROUPS=[
+ {g:'الأساسية',items:[['سيرة الشيخ',p(37)],['إحصائيات بالجهود',c(3431)],['تراجعات الشيخ',c(1234)],['القرآن الكريم',c(2956)],['الخطب المنبرية',c(2396)],['نصائح تربوية',c(2552)],['مصطلحات شرعية',c(2785)]]},
+ {g:'السلاسل العلمية',root:c(59),items:[['علم العقيدة',c(64)],['الفرق والملل',c(571)],['السياسة الشرعية',c(522)],['علم التفسير',c(72)],['علم علوم القرآن',c(73)],['علم التجويد',c(79)],['الفقه الحنفي',c(2022)],['الفقه المالكي',c(2021)],['الفقه الشافعي',c(2020)],['الفقه الحنبلي',c(71)]]},
+ {g:'الدورات العلمية',root:c(51),items:[['الدورة العلمية 832',c(5015)],['الدورة العلمية 831',c(5014)],['الدورة العلمية 830',c(5013)],['الدورة العلمية 829',c(5012)],['الدورة العلمية 828',c(5011)],['الدورة العلمية 827',c(5010)],['الدورة العلمية 826',c(5008)],['الدورة العلمية 825',c(5005)]]},
+ {g:'دروس ومحاضرات',root:c(46),items:[['المحاضرات العلمية',c(148)],['السلاسل التربوية',c(561)],['أكاديمية الرشاد 1441',c(3935)],['أكاديمية الرشاد 1442',c(4028)],['أكاديمية الرشاد 1443',c(4171)],['أكاديمية الرشاد 1444',c(4370)],['أكاديمية الرشاد 1445',c(4583)],['أكاديمية الرشاد 1446',c(4777)],['أكاديمية الرشاد 1448',c(4996)]]},
+ {g:'دروس عالمية',root:c(49),items:[['الكتب',c(166)],['المحاضرات',c(167)],['رسائل المدينة النبوية',c(834)],['رسائل مكة المكرمة',c(858)],['رحلة الكويت المباركة',c(1000)],['دروس مكة المكرمة حج 1437',c(3432)],['دروس المدينة النبوية حج 1437',c(3433)],['دروس المسجد النبوي عمرة 1438',c(3520)],['دروس المسجد النبوي عمرة 1440',c(3833)],['دروس المسجد الحرام حج 1440',c(3834)]]},
+ {g:'الملفات المنهجية',root:c(40),items:[['الملف الشرعي لأحداث مصر',c(54)],['إرشاد البرية لضبط مسألة الحاكمية',c(156)],['الملفات السلفية لقضايا المنهج',c(157)],['مقاطع منهجية مهمة',c(380)],['البيان الأبلج',c(2571)],['شبهات وردود',c(3584)],['الأحداث الجارية في العالم الإسلامي',c(3588)]]},
+ {g:'الردود العلمية',root:c(48),items:[]},
+ {g:'الفتاوى',root:c(454)+'&action=classify',items:[['فتاوى الأربعاء',c(3613)],['الفتاوى الشرعية 1438',c(3544)],['الفتاوى الشرعية 1437',c(3117)]]},
+ {g:'وقفات مع مناسبات',root:c(2397),items:[['موسم رمضان',c(2422)],['موسم الحج',c(2528)],['مناسبات خاصة',c(2549)],['العمرة في أسئلة وأجوبة',c(3524)],['حكم الاحتفال بالمولد النبوي',c(3746)],['فتاوى البرد والشتاء',c(3755)],['العشر الأوائل من ذي الحجة والأضحية',c(3830)],['أحكام العيدين',c(3831)],['صيام الستة من شوال',c(3976)]]},
+ {g:'المرئيات',root:c(6),items:[['السلاسل التربوية المرئية',c(143)],['الخطب المرئية',c(144)],['الدروس المرئية',c(145)],['مرئيات المقاطع المنهجية',c(895)],['الدورات العلمية التأصيلية المرئية',c(934)]]},
+ {g:'ميراث سلفنا',root:c(3),items:[['المشروح كتبًا',c(161)],['المترجم أعلامًا',c(162)]]},
+ {g:'التراجم',root:c(2398),items:[['صوتيات صغيرة للتراجم',c(3781)]]},
+ {g:'المدارس والأكاديميات',items:[['أكاديمية الرشاد العلمية',p(115)],['كتب أكاديمية الرشاد',c(3904)],['مدرسة المتون العلمية',p(284)],['مدرسة غيث الأثر',p(2578)],['غيث الأثر: حفظ المتون',p(3742)],['غيث الأثر: مذاكرة الشروحات',p(3741)]]},
+ {g:'مكتبات وبث',items:[['المكتبة المقروءة',c(4)],['المكتبة المرئية',c(6)],['المكتبة الصوتية',p(115)],['مكتبة الموقع',c(2979)],['البث المباشر',p(44)],['قسم التفريغات',c(3762)],['رسائل دعوية',c(2392)],['بطاقات دعوية',c(3826)],['مقبرة الشبهات',c(3784)]]},
+ {g:'ملفات مهمة',root:p(3531),items:[['العلامة الألباني',p(3532)],['العلامة ربيع المدخلي',p(3533)],['الشيخ عبيد الجابري',p(3562)],['خدمة كتاب التوحيد',p(3622)],['التحذير من الثورات العربية',p(3628)],['الإمام أبو حنيفة',c(5007)]]},
+ {g:'شروح كتب السنة',items:[['شرح سنن النسائي',c(2660)],['شرح سنن الترمذي',c(2679)],['شرح سنن الدارمي',c(2682)],['شرح سنن ابن ماجه',c(2681)],['شرح موطأ مالك',c(2683)]]}
+];
+const CATALOG=[];
+GROUPS.forEach(G=>{ if(G.root) CATALOG.push({t:G.g,g:'قسم',u:G.root}); G.items.forEach(i=>CATALOG.push({t:i[0],g:G.g,u:i[1]})); });
+
+const LESSONS=[
+ ['المجلس الرابع والعشرون','18 ربيع الآخر 1448','معاملة الحكام',50472,'شرح كتاب معاملة الحكام في ضوء الكتاب والسنة لابن برجس'],
+ ['المجلس الثالث والعشرون','ربيع الآخر 1448','معاملة الحكام',50471,'شرح كتاب معاملة الحكام في ضوء الكتاب والسنة لابن برجس'],
+ ['المجلس الثاني والعشرون','15 ربيع الآخر 1448','معاملة الحكام',50470,'شرح كتاب معاملة الحكام في ضوء الكتاب والسنة لابن برجس'],
+ ['الدرس 69: حكم مانع الزكاة','13 ربيع الآخر 1448','معارج القبول',50469,'شرح معارج القبول للعلامة حافظ حكمي'],
+ ['الدرس 68: وثانيًا إقامة الصلاة','12 ربيع الآخر 1448','معارج القبول',50468,'شرح معارج القبول للعلامة حافظ حكمي'],
+ ['الدرس 67: فاثبت أيها العبد المريد','11 ربيع الآخر 1448','معارج القبول',50467,'شرح معارج القبول للعلامة حافظ حكمي'],
+ ['الدرس 66: الحالة الثانية','10 ربيع الآخر 1448','معارج القبول',50466,'شرح معارج القبول للعلامة حافظ حكمي'],
+ ['الدرس 65: ولما كانت الصلاة جامعة','9 ربيع الآخر 1448','معارج القبول',50465,'شرح معارج القبول للعلامة حافظ حكمي'],
+ ['الدرس 7: وهو الذي بلغه الرسول أمته','5 ربيع الآخر 1448','عقيدة السلف',50464,'شرح عقيدة السلف أصحاب الحديث للعلامة ربيع المدخلي'],
+ ['الدرس 9: باب الترغيب في اتباع الكتاب والسنة','5 ربيع الآخر 1448','صحيح الترغيب',50463,'شرح صحيح الترغيب والترهيب للعلامة الألباني']
+];
+const COURSES=[[832,'6 ربيع الآخر 1448',5015],[831,'30 ربيع الأول 1448',5014],[830,'28 ربيع الأول 1448',5013],[829,'18 ربيع الأول 1448',5012],[828,'18 ربيع الأول 1448',5011],[827,'2 ربيع الأول 1448',5010]];
+const YEARS=[['الدورة الأولى 1441',3935],['الثانية 1442',4028],['الثالثة 1443',4171],['الرابعة 1444',4370],['الدفعة الثانية: الأولى 1445',4583],['الثانية 1446',4777],['الثالثة 1448',4996]];
+const TOPICS=GROUPS[1].items;
+
+const $=s=>document.querySelector(s);
+const el=(t,a={},h='')=>{const e=document.createElement(t);Object.entries(a).forEach(([k,v])=>e.setAttribute(k,v));e.innerHTML=h;return e;};
+const ext={target:'_blank',rel:'noopener'};
+
+/* جديد الدروس */
+const tabs=$('#tabs'), lessons=$('#lessons');
+const series=['الكل',...new Set(LESSONS.map(x=>x[2]))];
+let cur='الكل';
+function drawLessons(){
+  lessons.innerHTML='';
+  LESSONS.filter(x=>cur==='الكل'||x[2]===cur).forEach(x=>{
+    lessons.appendChild(el('a',{class:'lesson',href:l(x[3]),...ext},
+      `<span class="play"><svg><use href="#i-play"/></svg></span><span><b>${x[0]}</b><small>${x[4]}</small><small>${x[1]}</small></span>`));
+  });
+}
+function drawTabs(){
+  tabs.innerHTML='';
+  series.forEach(s=>{const b=el('button',{type:'button','aria-pressed':String(s===cur)},s);b.onclick=()=>{cur=s;drawTabs();drawLessons();};tabs.appendChild(b);});
+}
+drawTabs();drawLessons();
+
+TOPICS.forEach(t=>$('#topics').appendChild(el('a',{href:t[1],...ext},t[0])));
+COURSES.forEach(x=>$('#courseList').appendChild(el('a',{class:'course',href:c(x[2]),...ext},`<i>${x[0]}</i><span>شرح عدة رسائل للسلف وعلماء الأمة<small>${x[1]}</small></span>`)));
+YEARS.forEach(y=>$('#years').appendChild(el('a',{href:c(y[1]),...ext},y[0])));
+
+/* كل الأقسام */
+const body=$('#allBody');
+GROUPS.forEach(G=>{
+  const d=el('div',{class:'grp'});
+  d.appendChild(el('h3',{},G.root?`<a href="${G.root}" target="_blank" rel="noopener">${G.g}</a>`:G.g));
+  const u=el('ul');G.items.forEach(i=>u.appendChild(el('li',{},`<a href="${i[1]}" target="_blank" rel="noopener">${i[0]}</a>`)));
+  d.appendChild(u);body.appendChild(d);
+});
+const dlg=$('#all');
+$('#openAll').onclick=()=>dlg.showModal();
+$('#closeAll').onclick=()=>dlg.close();
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+
+/* البحث */
+const norm=s=>s.replace(/[\u064B-\u065F\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/ـ/g,'').toLowerCase().trim();
+const q=$('#q'), res=$('#res'); let hits=[], idx=-1;
+function show(){
+  const v=norm(q.value);
+  if(!v){res.hidden=true;q.setAttribute('aria-expanded','false');return;}
+  const words=v.split(/\s+/);
+  hits=CATALOG.filter(i=>{const n=norm(i.t+' '+i.g);return words.every(w=>n.includes(w));}).slice(0,10);
+  res.innerHTML='';idx=-1;
+  if(!hits.length) res.appendChild(el('div',{class:'none'},'لا توجد نتائج في الأقسام. افتح «كل الأقسام» لتصفح الدليل.'));
+  hits.forEach((h,i)=>res.appendChild(el('a',{href:h.u,role:'option',id:'r'+i,'aria-selected':'false',...ext},`<span>${h.t}</span><small>${h.g}</small>`)));
+  res.hidden=false;q.setAttribute('aria-expanded','true');
+}
+function mark(n){
+  const items=[...res.querySelectorAll('a')];if(!items.length)return;
+  idx=(n+items.length)%items.length;
+  items.forEach((a,i)=>a.setAttribute('aria-selected',String(i===idx)));
+  items[idx].scrollIntoView({block:'nearest'});
+}
+q.addEventListener('input',show);
+q.addEventListener('keydown',e=>{
+  if(e.key==='ArrowDown'){e.preventDefault();mark(idx+1);}
+  else if(e.key==='ArrowUp'){e.preventDefault();mark(idx-1);}
+  else if(e.key==='Enter'&&hits.length){window.open(hits[Math.max(idx,0)].u,'_blank','noopener');}
+  else if(e.key==='Escape'){res.hidden=true;q.setAttribute('aria-expanded','false');}
+});
+document.addEventListener('click',e=>{if(!e.target.closest('.search')){res.hidden=true;}});
+document.addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)&&!dlg.open){e.preventDefault();q.focus();window.scrollTo({top:0,behavior:'smooth'});}});
+
+/* الوضع الداكن */
+const root=document.documentElement;
+try{const s=localStorage.getItem('theme');if(s)root.dataset.theme=s;}catch(e){}
+$('#theme').onclick=()=>{
+  const dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+  root.dataset.theme=dark?'light':'dark';
+  try{localStorage.setItem('theme',root.dataset.theme);}catch(e){}
+};
+</script>
+</body>
+</html>
